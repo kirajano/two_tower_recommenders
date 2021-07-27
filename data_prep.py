@@ -95,6 +95,7 @@ def process_products(popularity, attributes) -> pd.DataFrame:
     products_combined =  pd.merge(popularity, attributes[attr_cols],
                 left_on="CONFIG_ID", right_on="CONFIG_ID", how="inner")
 
+    return products_combined
 
 
 
